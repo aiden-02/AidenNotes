@@ -4,7 +4,7 @@ import { withI18n } from 'vitepress-i18n'
 
 // https://vitepress.dev/reference/site-config
 const vitePressOptions: UserConfig<DefaultTheme.Config> = {
-  base: '/aidenotes/',
+  // base: '/aidenotes/',
   title: 'Aiden Notes',
   description: '个人随笔',
   head: [['link', { rel: 'icon', href: '/aidenotes/logo.webp' }]],

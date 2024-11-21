@@ -26,5 +26,3 @@ features:
     title: 护发
     details: 哪个洗发水好用？
 ---
-
-<Confetti />
