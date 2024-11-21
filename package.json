@@ -13,6 +13,7 @@
   "devDependencies": {
     "canvas-confetti": "^1.9.3",
     "vitepress": "^1.5.0",
+    "vitepress-i18n": "^1.3.0",
     "vitepress-sidebar": "^1.29.0"
   }
 }
