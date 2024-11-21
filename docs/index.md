@@ -4,37 +4,28 @@ layout: home
 
 hero:
   name: 'Aiden Notes'
-  text: '个人笔记'
-  tagline: 以及可能性碎碎念 :)
+  text: '个人随笔'
+  tagline: <(￣︶￣)↗[GO!]
   image:
     src: /home.webp
   actions:
     - theme: brand
-      text: 开始阅读
-      link: /frontend/css
+      text: 开始
+      link: /frontend/css/CSS基础
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/aiden-02/aidenotes
+      text: 个人 GitHub
+      link: https://github.com/aiden-02
+
+features:
+  - icon: 🔩
+    title: 沉淀
+    details: 螺丝钉的自我修养
+  - icon: 📚
+    title: 持续学习
+    details: 开卷
+  - icon: 🫡
+    title: 护发
+    details: 哪个洗发水好用？
 ---
 
-<style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
-  --vp-home-hero-image-filter: blur(44px);
-}
-
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
-}
-
-@media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(68px);
-  }
-}
-</style>
+<Confetti />

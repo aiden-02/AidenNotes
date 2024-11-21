@@ -1,6 +1,6 @@
 # js 高级
 
-## 一、this 指向
+## this 指向
 
 1. 默认绑定：绑定到 globalThis、严格默认下为 undefined
 
@@ -26,10 +26,8 @@
 
 优先级：new > bind > apply、call > 显式 > 隐式
 
-## 二、箭头函数
+## 箭头函数
 
 箭头函数不会绑定 this、arguments 属性，且不能作为构造函数使用。
 
 箭头函数不适用 this 的四种绑定规则，而是根据外层作用域来决定 this
-
-## 三、浏览器渲染原理

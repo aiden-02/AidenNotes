@@ -1,10 +1,11 @@
 import { defineConfig } from 'vitepress'
+import { sidebar } from './configs/sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/aidenotes/',
   title: 'Aiden Notes',
-  description: '个人笔记',
+  description: '个人随笔',
   lang: 'zh-CN',
   head: [['link', { rel: 'icon', href: '/aidenotes/logo.webp' }]],
   themeConfig: {
@@ -12,29 +13,16 @@ export default defineConfig({
     nav: [
       {
         text: '前端',
-        link: '/frontend/css/',
-      },
-    ],
-    sidebar: [
-      {
-        text: 'CSS',
-        link: '/frontend/css/',
-      },
-      {
-        text: 'JavaScript',
-        collapsed: true,
         items: [
+          { text: 'CSS', link: '/frontend/css/CSS基础' },
           {
-            text: 'js初级',
-            link: '/frontend/js/primary',
-          },
-          {
-            text: 'js高级',
-            link: '/frontend/js/senior',
+            text: 'JavaScript',
+            link: '/frontend/js/js初级',
           },
         ],
       },
     ],
+    sidebar,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aiden-02/aidenotes' },
     ],
@@ -45,7 +33,7 @@ export default defineConfig({
     lastUpdated: {
       text: 'Updated at',
       formatOptions: {
-        dateStyle: 'full',
+        dateStyle: 'medium',
         timeStyle: 'medium',
       },
     },
@@ -53,5 +41,9 @@ export default defineConfig({
       provider: 'local',
     },
     logo: '/logo.webp',
+    footer: {
+      message: 'life is fxxking movie',
+      copyright: '人生如戏',
+    },
   },
 })
