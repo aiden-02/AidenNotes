@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /frontend/css/CSS基础
+      link: /前端/css/01_CSS基础
     - theme: alt
       text: 个人 GitHub
       link: https://github.com/aiden-02
