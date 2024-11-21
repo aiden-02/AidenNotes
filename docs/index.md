@@ -5,13 +5,12 @@ layout: home
 hero:
   name: 'Aiden Notes'
   text: '个人随笔'
-  tagline: <(￣︶￣)↗[GO!]
   image:
     src: /home.webp
   actions:
     - theme: brand
-      text: 开始
-      link: /前端/CSS/01_CSS基础
+      text: 了解更多
+      link: /个人随笔/01_关于Aiden
     - theme: alt
       text: 个人 GitHub
       link: https://github.com/aiden-02
