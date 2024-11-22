@@ -4,10 +4,9 @@ import { withI18n } from 'vitepress-i18n'
 
 // https://vitepress.dev/reference/site-config
 const vitePressOptions: UserConfig<DefaultTheme.Config> = {
-  // base: '/aidenotes/',
   title: 'Aiden Notes',
   description: '个人随笔',
-  head: [['link', { rel: 'icon', href: '/aidenotes/logo.webp' }]],
+  head: [['link', { rel: 'icon', href: '/logo_light.webp' }]],
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -24,7 +23,10 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
     search: {
       provider: 'local',
     },
-    logo: '/logo.webp',
+    logo: {
+      light: '/logo_dark.webp',
+      dark: '/logo_light.webp',
+    },
     footer: {
       message: 'life is fxxking movie',
       copyright: '人生如戏',
