@@ -10,7 +10,11 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: '前端笔记', link: '/前端/CSS/01_CSS基础' }],
+    nav: [
+      { text: '前端', link: '/前端/CSS/01_CSS基础' },
+      { text: '计算机网络', link: '/计算机网络/01_计算机网络概览' },
+      { text: '区块链', link: '/区块链/01_密码学原理' },
+    ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aiden-02/aidenotes' },
     ],
@@ -50,6 +54,20 @@ const vitePressSidebarOptions = [
     resolvePath: '/前端/',
     collapsed: false, //折叠组关闭
     collapseDepth: 3, //折叠组2级菜单
+    removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
+    prefixSeparator: '_', //删除前缀的符号
+  },
+  {
+    documentRootPath: 'docs',
+    scanStartPath: '计算机网络',
+    resolvePath: '/计算机网络/',
+    removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
+    prefixSeparator: '_', //删除前缀的符号
+  },
+  {
+    documentRootPath: 'docs',
+    scanStartPath: '区块链',
+    resolvePath: '/区块链/',
     removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
     prefixSeparator: '_', //删除前缀的符号
   },

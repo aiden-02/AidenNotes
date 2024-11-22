@@ -9,14 +9,14 @@
 夜爬武功山，从晚上十一点，爬到早上五点，登上金顶
 
 六点的日出
-![](/personal/wugongshan3.webp)
+![](./assets/wugongshan3.webp)
 
-![](/personal/wugongshan1.webp)
+![](./assets/wugongshan1.webp)
 
-![](/personal/wugongshan2.webp)
+![](./assets/wugongshan2.webp)
 
 公路车骑行
 
-![](/personal/bike1.webp)
+![](./assets/bike1.webp)
 
-![](/personal/bike2.webp)
+![](./assets/bike2.webp)

@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: 了解更多
-      link: /个人随笔/01_关于Aiden
+      link: /个人随笔/01_导航
     - theme: alt
       text: 个人 GitHub
       link: https://github.com/aiden-02
