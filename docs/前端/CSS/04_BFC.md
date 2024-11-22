@@ -27,7 +27,7 @@ block formatting context
 - 解决 margin 的折叠问题
 - 解决浮动高度塌陷的问题
 
-:::tip
+:::warning 注意
 
 为什么可以解决浮动高度的塌陷问题，但是不能解决绝对定位元素的高度塌陷问题呢？
 

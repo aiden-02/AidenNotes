@@ -38,6 +38,9 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
     editLink: {
       pattern: 'https://github.com/aiden-02/aidenotes/edit/main/docs/:path',
     },
+    outline: {
+      level: 'deep',
+    },
   },
 }
 

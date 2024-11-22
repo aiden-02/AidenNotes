@@ -2,7 +2,7 @@
 
 开启了 flex 布局的元素叫 flex container，子元素叫 flex item
 
-:::tip
+:::tip 提示
 
 flex item 的布局将受 flex container 属性的设置来进行控制和布局;
 
