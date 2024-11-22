@@ -1,5 +1,3 @@
-# js 高级
-
 ## this 指向
 
 1. 默认绑定：绑定到 globalThis、严格默认下为 undefined
@@ -26,8 +24,42 @@
 
 优先级：new > bind > apply、call > 显式 > 隐式
 
+## 手写 apply、call、bind
+
+```js
+Function.prototype.myExec = function (thisArg, args) {
+  thisArg = thisArg ? Object(thisArg) : window
+  args = args || []
+  const temp = Symbol('fn')
+  thisArg[temp] = this
+  const result = thisArg[temp](...args)
+  delete thisArg[temp]
+  return result
+}
+
+Function.prototype.myApply = function (thisArg, args) {
+  return this.myExec(thisArg, args)
+}
+
+Function.prototype.myCall = function (thisArg, ...args) {
+  return this.myExec(thisArg, args)
+}
+
+Function.prototype.myBind = function (thisArg, ...args) {
+  thisArg = thisArg ? Object(thisArg) : window
+  args = args || []
+  const temp = Symbol('fn')
+  thisArg[temp] = this
+  return function (...newArgs) {
+    const result = thisArg[temp](...args, ...newArgs)
+    delete thisArg[temp]
+    return result
+  }
+}
+```
+
 ## 箭头函数
 
-箭头函数不会绑定 this、arguments 属性，且不能作为构造函数使用。
+箭头函数`不会绑定 this、arguments 属性`，且`不能作为构造函数使用`。
 
-箭头函数不适用 this 的四种绑定规则，而是根据外层作用域来决定 this
+箭头函数不适用 this 的四种绑定规则，而是根据`外层作用域`来决定 this

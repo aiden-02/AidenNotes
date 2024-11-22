@@ -1,6 +1,6 @@
 # flex 布局
 
-开启了 flex 布局的元素叫 flex container，子元素叫 flex item
+开启了 flex 布局的元素叫 `flex container`，子元素叫 `flex item`
 
 :::tip 提示
 
@@ -12,15 +12,15 @@ flex item 默认情况下是包裹内容的, 但是可以**设置宽度和高度
 
 :::
 
-flex-direction: row|row-reverse|column|column-reverse 设置主轴方向
+`flex-direction`: row|row-reverse|column|column-reverse 设置主轴方向
 
-flex-wrap: no-warp|wrap|wrap-reverse 决定了 flex container 是单行还是多行
+`flex-wrap`: no-warp|wrap|wrap-reverse 决定了 flex container 是单行还是多行
 
-justify-content: 决定了 flex items 在 main axis 上的对齐方式
+`justify-content`: 决定了 `flex items` 在 `main axis` 上的对齐方式
 
-align-items: 决定了 flex items 在 cross axis 上的对齐方式
+`align-items`: 决定了 `flex items` 在 `cross axis` 上的对齐方式
 
-align-content: 决定了**多行** flex items 在 cross axis 上的对齐方式
+`align-content`: 决定了**多行** flex items 在 cross axis 上的对齐方式
 
 ## flex-grow
 

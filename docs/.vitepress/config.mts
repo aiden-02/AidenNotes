@@ -11,9 +11,15 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '前端', link: '/前端/CSS/01_CSS基础' },
-      { text: '计算机网络', link: '/计算机网络/01_计算机网络概览' },
-      { text: '区块链', link: '/区块链/01_密码学原理' },
+      { text: '个人随笔', link: '/个人随笔/01_导航' },
+      {
+        text: '学习之路',
+        items: [
+          { text: '前端', link: '/前端/CSS/01_CSS基础' },
+          { text: '计算机网络', link: '/计算机网络/01_计算机网络概览' },
+          { text: '区块链', link: '/区块链/01_密码学原理' },
+        ],
+      },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aiden-02/aidenotes' },
@@ -47,6 +53,7 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
 // https://vitepress-i18n.cdget.com/guide/options
 const vitePressI18nOptions = {
   locales: ['zhHans'],
+  searchProvider: 'local' as const,
 }
 
 // https://vitepress-sidebar.cdget.com/zhHans/guide/options
