@@ -24,15 +24,6 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aiden-02/aidenotes' },
     ],
-    lastUpdated: {
-      formatOptions: {
-        dateStyle: 'short',
-        timeStyle: 'short',
-      },
-    },
-    search: {
-      provider: 'local',
-    },
     logo: {
       light: '/logo_dark.webp',
       dark: '/logo_light.webp',
@@ -44,9 +35,6 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
     editLink: {
       pattern: 'https://github.com/aiden-02/aidenotes/edit/main/docs/:path',
     },
-    outline: {
-      level: 'deep',
-    },
   },
 }
 
@@ -54,6 +42,14 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
 const vitePressI18nOptions = {
   locales: ['zhHans'],
   searchProvider: 'local' as const,
+  themeConfig: {
+    zhHans: {
+      outline: {
+        level: 'deep',
+        label: '页面导航',
+      },
+    },
+  },
 }
 
 // https://vitepress-sidebar.cdget.com/zhHans/guide/options
