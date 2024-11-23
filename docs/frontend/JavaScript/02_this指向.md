@@ -60,6 +60,8 @@ Function.prototype.myBind = function (thisArg, ...args) {
 
 ## 箭头函数
 
-箭头函数`不会绑定 this、arguments 属性`，且`不能作为构造函数使用`。
+箭头函数`不会绑定 this、arguments 属性`;
+
+箭头函数是没有`显式原型prototype`的，所以不能作为`构造函数`，也不能使用 `new` 来创建对象;
 
 箭头函数不适用 this 的四种绑定规则，而是根据`外层作用域`来决定 this
