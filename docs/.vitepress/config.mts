@@ -46,37 +46,35 @@ const vitePressI18nOptions = {
   },
 }
 
+const vitePressSidebarCommonOption = {
+  documentRootPath: 'docs',
+  collapsed: false, //折叠组关闭
+  collapseDepth: 2, //折叠组2级菜单
+  removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
+  prefixSeparator: '_', //删除前缀的符号
+}
+
 // https://vitepress-sidebar.cdget.com/zhHans/guide/options
 const vitePressSidebarOptions = [
   {
-    documentRootPath: 'docs',
+    ...vitePressSidebarCommonOption,
     scanStartPath: 'frontend',
     resolvePath: '/frontend/',
-    collapsed: false, //折叠组关闭
-    collapseDepth: 3, //折叠组2级菜单
-    removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
-    prefixSeparator: '_', //删除前缀的符号
   },
   {
-    documentRootPath: 'docs',
+    ...vitePressSidebarCommonOption,
     scanStartPath: 'network',
     resolvePath: '/network/',
-    removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
-    prefixSeparator: '_', //删除前缀的符号
   },
   {
-    documentRootPath: 'docs',
+    ...vitePressSidebarCommonOption,
     scanStartPath: 'blockchain',
     resolvePath: '/blockchain/',
-    removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
-    prefixSeparator: '_', //删除前缀的符号
   },
   {
-    documentRootPath: 'docs',
+    ...vitePressSidebarCommonOption,
     scanStartPath: 'guide',
     resolvePath: '/guide/',
-    removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
-    prefixSeparator: '_', //删除前缀的符号
   },
 ]
 
