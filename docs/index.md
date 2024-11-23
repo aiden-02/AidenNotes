@@ -3,26 +3,12 @@
 layout: home
 
 hero:
-  name: 'Aiden Notes'
-  text: '个人随笔'
+  name: 'AideNotes'
+  tagline: '沉淀 or 碎碎念'
   image:
-    src: /home.webp
+    src: /home.gif
   actions:
-    - theme: brand
-      text: 了解更多
-      link: /个人随笔/01_导航
     - theme: alt
-      text: 个人 GitHub
-      link: https://github.com/aiden-02
-
-features:
-  - icon: 🔩
-    title: 沉淀
-    details: 螺丝钉的自我修养
-  - icon: 📚
-    title: 持续学习
-    details: 开卷
-  - icon: 🫡
-    title: 护发
-    details: 哪个洗发水好用？
+      text: 进入导航
+      link: /guide/01_指南
 ---
