@@ -1,9 +1,10 @@
-/guide /guide/01_指南
+/guide /guide/overview
 
-/frontend /frontend/CSS/01_CSS基础
-/frontend/CSS /frontend/CSS/01_CSS基础
-/frontend/JavaScript /frontend/JavaScript/01_基础
+/frontend /frontend/css/css_basic
+/frontend/css /frontend/css/css_basic
+/frontend/javascript /frontend/javascript/js_basic
+/frontend/other /frontend/other/broswer_cache
 
-/network /network/01_计算机网络概览
+/network /network/overview
 
-/blockchain /blockchain/01_密码学原理
+/blockchain /blockchain/cryptology

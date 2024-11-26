@@ -1,4 +1,9 @@
-# JavaScript 对象增强
+---
+title: 对象高级
+order: 6
+---
+
+# JavaScript 对象高级
 
 ## defineProperty
 

@@ -1,4 +1,9 @@
-# JavaScript 函数增强
+---
+title: 函数高级
+order: 5
+---
+
+# JavaScript 函数高级
 
 ## 函数对象的属性
 

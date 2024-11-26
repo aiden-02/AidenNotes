@@ -11,13 +11,13 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '指南', link: '/guide/01_指南' },
+      { text: '指南', link: '/guide/overview' },
       {
         text: '学习',
         items: [
-          { text: '前端', link: '/frontend/CSS/01_CSS基础' },
-          { text: '计算机网络', link: '/network/01_计算机网络概览' },
-          { text: '区块链', link: '/blockchain/01_密码学原理' },
+          { text: '前端', link: '/frontend/css/css_basic' },
+          { text: '计算机网络', link: '/network/overview' },
+          { text: '区块链', link: '/blockchain/cryptology' },
         ],
       },
     ],
@@ -50,8 +50,9 @@ const vitePressSidebarCommonOption = {
   documentRootPath: 'docs',
   collapsed: false, //折叠组关闭
   collapseDepth: 2, //折叠组2级菜单
-  removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
-  prefixSeparator: '_', //删除前缀的符号
+  sortMenusByFrontmatterOrder: true,
+  useTitleFromFrontmatter: true,
+  useFolderTitleFromIndexFile: true,
 }
 
 // https://vitepress-sidebar.cdget.com/zhHans/guide/options

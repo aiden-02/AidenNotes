@@ -1,3 +1,8 @@
+---
+title: this 指向
+order: 2
+---
+
 ## this 指向
 
 1. 默认绑定：绑定到 globalThis、严格默认下为 undefined

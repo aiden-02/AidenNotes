@@ -1,3 +1,8 @@
+---
+title: flex 布局
+order: 3
+---
+
 # flex 布局
 
 开启了 flex 布局的元素叫 `flex container`，子元素叫 `flex item`

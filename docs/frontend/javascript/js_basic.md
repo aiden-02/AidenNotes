@@ -1,3 +1,8 @@
+---
+title: js 基础
+order: 1
+---
+
 # JavaScript 基础
 
 ## 数据类型

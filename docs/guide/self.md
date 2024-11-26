@@ -1,3 +1,8 @@
+---
+title: 关于 Aiden
+order: 2
+---
+
 # 关于 Aiden
 
 2002 年生，毕业于 SCAU，大红性格

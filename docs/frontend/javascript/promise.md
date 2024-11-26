@@ -1,3 +1,8 @@
+---
+title: Promise
+order: 9
+---
+
 # [Promise](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 - `Promise` 是一个类，可以翻译成 承诺、许诺 、期约；

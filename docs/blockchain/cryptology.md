@@ -1,3 +1,8 @@
+---
+title: 密码学原理
+order: 1
+---
+
 ### 密码哈希函数（cryptographic hash function）
 
 `collision resistance`: 指没有什么特别的方法去人为制造哈希碰撞。没有办法篡改内容，而不被检测出来。注意，该性质并没有被理论证明。

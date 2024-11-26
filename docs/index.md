@@ -10,5 +10,5 @@ hero:
   actions:
     - theme: alt
       text: 进入导航
-      link: /guide/01_指南
+      link: /guide/overview
 ---

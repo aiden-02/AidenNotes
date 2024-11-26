@@ -1,3 +1,8 @@
+---
+title: 内存管理和闭包
+order: 4
+---
+
 # JavasScript 内存管理和闭包
 
 JavaScript 的内存管理是自动的，无形的
