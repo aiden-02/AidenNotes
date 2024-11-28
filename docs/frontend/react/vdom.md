@@ -16,9 +16,9 @@ order: 1
 
 ## React.createElement
 
-1. 用于生成虚拟 DOM 树，返回一个包含 type（元素类型）和 props（属性和子元素）的对象。 children 可以是`文本`或其他虚拟 DOM 对象。
-2. `React.createTextElement`: 用于处理`文本节点`，将字符串封装成虚拟 DOM 对象。
-3. `React.render`: 将虚拟 DOM 转化为实际 DOM 元素。 使用`递归`的方式渲染所有子元素。 最后将生成的 DOM 节点插入到指定的容器中
+用于生成虚拟 DOM 树，返回一个包含 type（元素类型）和 props（属性和子元素）的对象。 children 可以是`文本`或其他虚拟 DOM 对象。
+
+`React.createTextElement`: 用于处理`文本节点`，将字符串封装成虚拟 DOM 对象。
 
 ```js
 const React = {
@@ -49,3 +49,37 @@ const React = {
   },
 }
 ```
+
+## React.render
+
+`React.render`将虚拟 DOM 转化为实际 DOM 元素。 使用`递归`的方式渲染所有子元素。 最后将生成的 DOM 节点插入到指定的容器中
+
+```js
+
+function render(element, container) {
+  // 需要处理文本元素，如果元素类型是 TEXT_ELEMENT ，我们创建一个文本节点而不是常规节点。
+  const dom =
+    element.type == "TEXT_ELEMENT"
+      ? document.createTextNode("")
+      : document.createElement(element.type)
+
+  // 将元素属性分配给节点
+  Object.keys(element.props)
+    .filter(key => key !== "children")
+    .forEach(name => {
+      dom[name] = element.props[name]
+    })
+​
+  // 为每个子节点递归执行相同的操作
+  element.props.children.forEach(child =>
+    render(child, dom)
+  )
+​
+  container.appendChild(dom)
+}
+
+```
+
+注意，这里代码并没有结合 fiber 来做到可中断渲染，只是做一个大概的示例
+
+更细致的操作放在 [fiber](./fiber.md) 章节
