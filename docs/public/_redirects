@@ -4,6 +4,7 @@
 /frontend/css /frontend/css/css_basic
 /frontend/javascript /frontend/javascript/js_basic
 /frontend/other /frontend/other/browser_cache
+/frontend/react /frontend/react/vdom
 
 /network /network/overview
 
