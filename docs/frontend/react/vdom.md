@@ -79,7 +79,3 @@ function render(element, container) {
 }
 
 ```
-
-注意，这里代码并没有结合 fiber 来做到可中断渲染，只是做一个大概的示例
-
-更细致的操作放在 [fiber](./fiber.md) 章节
